@@ -7,7 +7,8 @@ from keras.preprocessing.image import ImageDataGenerator
 import tensorflow as tf
 
 
-def train(dataset='mnist', batch_size=128, epochs=50):
+# def train(dataset='mnist', batch_size=128, epochs=50):
+def train(dataset='mnist', batch_size=128, epochs=10):
     """
     Train one model with data augmentation: random padding+cropping and horizontal flip
     :param args: 
