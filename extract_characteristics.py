@@ -339,9 +339,9 @@ def main(args):
         print("LID: [characteristic shape: ", characteristics.shape, ", label shape: ", labels.shape)
 
         # save to file
-        # file_name = os.path.join(PATH_DATA, 'lid_%s_%s.npy' % (args.dataset, args.attack))
-        file_name = os.path.join('../data_grid_search/lid_large_batch/', 'lid_%s_%s_%s.npy' %
-                                 (args.dataset, args.attack, args.k_nearest))
+        file_name = os.path.join(PATH_DATA, 'lid_%s_%s.npy' % (args.dataset, args.attack))
+        # file_name = os.path.join('../data_grid_search/lid_large_batch/', 'lid_%s_%s_%s.npy' %
+                                 # (args.dataset, args.attack, args.k_nearest))
 
         data = np.concatenate((characteristics, labels), axis=1)
         np.save(file_name, data)
