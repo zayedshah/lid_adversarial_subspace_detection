@@ -76,14 +76,16 @@ def get_data(dataset='mnist'):
         if not os.path.isfile(os.path.join(PATH_DATA, "svhn_train.mat")):
             print('Downloading SVHN train set...')
             call(
-                "curl -o ../data/svhn_train.mat "
+                "curl -o ./data/svhn_train.mat "
+                # "curl -o ../data/svhn_train.mat "
                 "http://ufldl.stanford.edu/housenumbers/train_32x32.mat",
                 shell=True
             )
         if not os.path.isfile(os.path.join(PATH_DATA, "svhn_test.mat")):
             print('Downloading SVHN test set...')
             call(
-                "curl -o ../data/svhn_test.mat "
+                "curl -o ./data/svhn_test.mat "
+                # "curl -o ../data/svhn_test.mat "
                 "http://ufldl.stanford.edu/housenumbers/test_32x32.mat",
                 shell=True
             )
